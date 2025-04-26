@@ -14,8 +14,8 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: #FF8C00; /* Orange foncé (DarkOrange) */
-      color: #f2f2f2;
+      background-color: #FFD700; /* Or vif (Gold) */ 
+      color: #1a1a1a;
       line-height: 1.6;
     }
 
@@ -35,78 +35,61 @@
     }
     nav a {
       text-decoration: none;
-      color: #f2f2f2;
+      color: #FFD700; /* Texte doré sur fond noir */
       font-weight: bold;
       padding: 0.5rem 1rem;
       border-radius: 4px;
       transition: background 0.3s, color 0.3s;
     }
     nav a:hover {
-      background: #c5a900;
+      background: #fff;
       color: #000;
     }
 
     /* Section Héros */
     .hero {
-      background: url('https://example.com/grammys-hero.jpg') center/cover no-repeat;
-      height: 60vh;
+      background: #222;
+      height: 40vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: #fff;
+      color: #FFD700;
       position: relative;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.5);
     }
     .hero h1 {
-      position: relative;
-      font-size: 3rem;
-      z-index: 1;
+      font-size: 2.5rem;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     }
 
-    /* Trois cartes de navigation */
+    /* Trois sous-rubriques */
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
       padding: 2rem;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
     }
     .card {
-      background: #222;
+      background: #fff;
       border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       transition: transform 0.3s;
     }
     .card:hover {
       transform: translateY(-5px);
     }
-    .card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 1rem;
-    }
-    .card-content h2 {
+    .card h2 {
       margin-bottom: 0.5rem;
       color: #c5a900;
     }
-    .card-content p {
+    .card p {
       margin-bottom: 1rem;
-      font-size: 0.95rem;
-      color: #ddd;
+      color: #444;
     }
-    .card-content a {
+    .card a {
       display: inline-block;
       padding: 0.5rem 1rem;
       background: #c5a900;
@@ -116,7 +99,7 @@
       font-weight: bold;
       transition: background 0.3s;
     }
-    .card-content a:hover {
+    .card a:hover {
       background: #e4bd00;
     }
 
@@ -149,19 +132,21 @@
 
   <!-- Trois sous-rubriques -->
   <section class="cards">
-  
-        <h2>Dernière édition</h2>
-        <p>Revivez les temps forts de la cérémonie la plus glamour de la musique.</p>
-        
-  
-        <h2>Gagnants</h2>
-        <p>Consultez la liste complète des gagnants des Grammy Awards 2025.</p>
-    
-    
-        <h2>Shows</h2>
-        <p>Découvrez les performances live et les moments inoubliables.</p>
-        
-    
+    <div class="card">
+      <h2>Dernière édition</h2>
+      <p>Revivez les temps forts de la cérémonie la plus glamour de la musique.</p>
+      <a href="dernièreéedition.html">Découvrir</a>
+    </div>
+    <div class="card">
+      <h2>Gagnants</h2>
+      <p>Consultez la liste complète des lauréats des Grammy Awards 2025.</p>
+      <a href="gagnants.html">Voir</a>
+    </div>
+    <div class="card">
+      <h2>Shows</h2>
+      <p>Découvrez les performances live et les moments inoubliables.</p>
+      <a href="shows.html">Explorer</a>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -172,7 +157,10 @@
 </body>
 </html>
 
-
+ 
+  
+  
+  
 
 
 

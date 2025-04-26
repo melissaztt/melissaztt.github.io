@@ -40,3 +40,15 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}

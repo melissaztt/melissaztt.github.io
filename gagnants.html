@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -56,6 +56,19 @@ strong {
   margin-bottom: 8px;
   font-size: 16px;
   color: #B8860B;
+}
+
+/* Responsive: make cards wider and bigger on smaller screens */
+@media (max-width: 768px) {
+  .gallery {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    width: 100%;
+  }
 }
 </style>
 </head>

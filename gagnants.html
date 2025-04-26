@@ -4,48 +4,74 @@
 <meta charset="UTF-8">
 <title>Gagnants des Grammy Awards 2025</title>
 <style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 220px;
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-  font-family: Merriweather, serif;
-  font-size: 14px;
-}
 body {
   background-color: #B8860B;
   margin: 20px;
+  font-family: 'Merriweather', serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #B8860B;
 }
 </style>
 </head>
 <body>
 
+<div class="container">
+
 <div class="gallery">
   <a target="_blank" href="#">
     <img src="/Images/beyoncé.jpeg" alt="Beyoncé">
+    <div class="desc">
+      <strong>Album de l’année</strong>
+      Artiste : Beyoncé<br>
+      Album : Cowboy Carter
+    </div>
   </a>
-  <div class="desc">
-    <strong>Album de l’année</strong><br>
-    Artiste : Beyoncé<br>
-    Album : Cowboy Carter
-  </div>
 </div>
 
 <div class="gallery">
@@ -311,6 +337,8 @@ body {
 
 </body>
 </html>
+
+
 
 
 

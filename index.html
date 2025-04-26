@@ -48,19 +48,28 @@
 
     /* Section Héros */
     .hero {
-      background: #222;
-      height: 40vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #FFD700;
-      position: relative;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    }
+  background: url('/Images/grammy_background.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFD700;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text readable */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  z-index: 1; /* Make sure the text is above the dark overlay */
+}
 
     /* Trois sous-rubriques */
     .cards {

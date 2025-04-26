@@ -1,63 +1,202 @@
 <!DOCTYPE html>
-<html>
-<style> 
-body{
-    background-color:  #B8860B;
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accueil – Grammy Awards</title>
+  <style>
+    /* Reset basique */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-</style>
-</head>
-<body>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #FF8C00; /* Orange foncé (DarkOrange) */
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
 
-header {
-      background-image: url('grammy.trophy.jpeg'); 
-      background-size: cover;
-      background-position: center;
-      height: 250px;
+    /* Navigation */
+    header {
+      background: #000;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #f2f2f2;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background: #c5a900;
+      color: #000;
+    }
+
+    /* Section Héros */
+    .hero {
+      background: url('https://example.com/grammys-hero.jpg') center/cover no-repeat;
+      height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      font-size: 2rem;
-      text-shadow: 1px 1px 5px black;
-    } <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title> GRAMMY AWARDS 20255 - Accueil</title>
-  <link href="feuilledestyle.css" rel="stylesheet" type="text/css" />
-</head>
-
-     nav {
-      background-color: #333;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
       text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 1;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     }
 
-    nav a:hover {
-      background-color: #575757;
+    /* Trois cartes de navigation */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h2 {
+      margin-bottom: 0.5rem;
+      color: #c5a900;
+    }
+    .card-content p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+    .card-content a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #c5a900;
+      color: #000;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .card-content a:hover {
+      background: #e4bd00;
+    }
+
+    /* Footer simple */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #000;
+      color: #777;
+      font-size: 0.85rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
   <header>
-    GRAMMY AWARDS 2025
+    <nav>
+      <a href="derniere-edition.html">Dernière édition</a>
+      <a href="gagnants.html">Gagnants</a>
+      <a href="shows.html">Shows</a>
+    </nav>
   </header>
 
-  <nav>
-    <li><a href="dernièreédition.html"> Dernière édition </a></li>
-    <li><a href="gagnants.html"> Gagnants </a></li>
-    <li><a href="shows.html"> Shows </a></li>
-  </nav>
+  <!-- Section Héros -->
+  <section class="hero">
+    <h1>Bienvenue aux Grammy Awards</h1>
+  </section>
 
-  <main>
-    <!-- Your main content goes here -->
-  </main>
+  <!-- Trois sous-rubriques -->
+  <section class="cards">
+    <div class="card">
+      <img src="/images/derniere-edition.jpg" alt="Dernière édition">
+      <div class="card-content">
+        <h2>Dernière édition</h2>
+        <p>Revivez les temps forts de la cérémonie la plus glamour de la musique.</p>
+        <a href="derniere-edition.html">Découvrir</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/gagnants.jpg" alt="Gagnants">
+      <div class="card-content">
+        <h2>Gagnants</h2>
+        <p>Consultez la liste complète des lauréats des Grammy Awards 2025.</p>
+        <a href="gagnants.html">Voir</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/images/shows.jpg" alt="Shows">
+      <div class="card-content">
+        <h2>Shows</h2>
+        <p>Découvrez les performances live et les moments inoubliables.</p>
+        <a href="shows.html">Explorer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Grammy Awards • Tous droits réservés
+  </footer>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

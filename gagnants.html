@@ -21,21 +21,38 @@ body {
 }
 
 .gallery {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
   width: 220px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+  background-color: #f5deb3; /* Light goldish highlight */
+  transform: translateY(-5px); /* Lift the card up a bit */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery a {
   text-decoration: none;
   color: inherit;
 }
 
-.gallery:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-size: 14px;
 }
 
 .gallery img {
@@ -58,7 +75,11 @@ strong {
   color: #B8860B;
 }
 
-/* Responsive: make cards wider and bigger on smaller screens */
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 768px) {
   .gallery {
     width: 45%;

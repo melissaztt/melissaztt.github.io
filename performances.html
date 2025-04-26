@@ -1,96 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Prestations en direct 2025</title>
-  <style>
-    body { font-family:Segoe UI, Tahoma, sans-serif; text-align: center; background: #f9f9f9; }
-    .video { margin: 20px; }
-    iframe { width: 560px; height: 315px; border-radius: 10px; }
-  </style>
+<meta charset="UTF-8">
+<title>Performances des Grammy Awards 2025</title>
+<style>
+body {
+  background-color: #B8860B;
+  margin: 20px;
+  font-family: 'Merriweather', serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-thumb {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  pointer-events: none;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #B8860B;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    width: 100%;
+  }
+}
+</style>
 </head>
+
 <body>
 
-<h1>Prestations en direct 2025</h1>
+<div class="container">
 
-<div class="video">
-  <h2>Benson Boone- Beautiful Things</h2>
-  <iframe src="https://www.youtube.com/embed/VLfUCDBZVymsYY-N" frameborder="0" allowfullscreen></iframe>
+  <!-- Sabrina Carpenter -->
+  <div class="gallery">
+    <div id="sabrina" class="video-thumb" 
+         style="background-image: url('https://img.youtube.com/vi/71ielxt31Gc/maxresdefault.jpg');">
+      <div class="play-button">▶️</div>
+    </div>
+    <div class="desc">
+      <strong>Sabrina Carpenter</strong>
+      Espresso / Please Please Please
+    </div>
+  </div>
+
+  <!-- Benson Boone -->
+  <div class="gallery">
+    <div id="benson" class="video-thumb" 
+         style="background-image: url('https://img.youtube.com/vi/USDhRcsUY90/maxresdefault.jpg');">
+      <div class="play-button">▶️</div>
+    </div>
+    <div class="desc">
+      <strong>Benson Boone</strong>
+      Beautiful Things
+    </div>
+  </div>
+
+  <!-- Chappell Roan -->
+  <div class="gallery">
+    <div id="chappell" class="video-thumb" 
+         style="background-image: url('https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg');">
+      <div class="play-button">▶️</div>
+    </div>
+    <div class="desc">
+      <strong>Chappell Roan</strong>
+      Pink Pony Club
+    </div>
+  </div>
+
 </div>
 
-<div class="video">
-  <h2>Chappell Roan - Pink Pony Club</h2>
-  <iframe src="https://www.youtube.com/embed/zz70xwwajALjj3TE" frameborder="0" allowfullscreen></iframe>
-</div>
+<script>
+const videos = {
+  sabrina: '71ielxt31Gc',
+  benson: 'USDhRcsUY90',
+  chappell: 'VIDEO_ID' // Replace with actual YouTube ID for Chappell Roan
+};
 
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video">
-  <h2>Artist 2 - Song Name</h2>
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-</div>
+Object.keys(videos).forEach(id => {
+  const div = document.getElementById(id);
+  div.addEventListener('click', function() {
+    const iframe = document.createElement('iframe');
+    iframe.width = '220';
+    iframe.height = '220';
+    iframe.src = `https://www.youtube.com/embed/${videos[id]}?autoplay=1`;
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.style.borderRadius = '16px';
+    this.parentNode.replaceChild(iframe, this);
+  });
+});
+</script>
 
 </body>
 </html>
-
 
 
 

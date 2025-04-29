@@ -1,216 +1,251 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Performances des Grammy Awards 2025</title>
-<style>
-body {
-  background-color: #B8860B;
-  margin: 20px;
-  font-family: 'Merriweather', serif;
-  display: flex;
-  justify-content: center;
-}
+  <meta charset="UTF-8">
+  <title>Performances des Grammy Awards</title>
+  <style>
+    body {
+      background-color: #B8860B;
+      margin: 20px;
+      font-family: 'Merriweather', serif;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.container {
-  max-width: 1400px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+    .container {
+      max-width: 1400px;
+      width: 100%;
+      padding: 20px;
+    }
 
-.gallery {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  width: 220px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none;
-  color: inherit;
-}
+    .year-title {
+      width: 100%;
+      font-size: 28px;
+      color: white;
+      text-align: center;
+      margin: 60px 0 20px;
+      font-family: 'Merriweather', serif;
+    }
 
-.gallery:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
+    .year-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
 
-.video-thumb {
-  width: 100%;
-  height: 220px;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  position: relative;
-}
+    .gallery {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
 
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  color: white;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-  pointer-events: none;
-}
+    .gallery:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
 
-.desc {
-  padding: 15px;
-  text-align: center;
-  font-size: 15px;
-  line-height: 1.4;
-}
+    .video-thumb {
+      width: 100%;
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      position: relative;
+    }
 
-strong {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 16px;
-  color: #B8860B;
-}
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+      pointer-events: none;
+    }
 
-@media (max-width: 768px) {
-  .gallery {
-    width: 45%;
-  }
-}
+    .desc {
+      padding: 15px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 1.4;
+    }
 
-@media (max-width: 480px) {
-  .gallery {
-    width: 100%;
-  }
-}
-</style>
+    strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: #B8860B;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
 <div class="container">
 
-  <div class="gallery">
-  <div id="sabrina" class="video-thumb" 
-       style="background-image: url('https://img.youtube.com/vi/s-qrm3jwpl4/maxresdefault.jpg');">
-    <div class="play-button">▶</div>
-  </div>
-  <div class="desc">
-    <strong>Sabrina Carpenter</strong>
-    Espresso / Please Please Please
-  </div>
-</div>
-  
-  <div class="gallery">
-    <div id="benson" class="video-thumb" 
-         style="background-image: url('https://img.youtube.com/vi/USDhRcsUY90/maxresdefault.jpg');">
-      <div class="play-button">▶</div>
+  <!-- 2025 -->
+  <h2 class="year-title">Meilleures Performances – 2025</h2>
+  <div class="year-group">
+    <div class="gallery">
+      <div id="sabrina" class="video-thumb" 
+           style="background-image: url('https://img.youtube.com/vi/s-qrm3jwpl4/maxresdefault.jpg');">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="desc">
+        <strong>Sabrina Carpenter</strong>
+        Espresso / Please Please Please
+      </div>
     </div>
-    <div class="desc">
-      <strong>Benson Boone</strong>
-      Beautiful Things
+
+    <div class="gallery">
+      <div id="benson" class="video-thumb" 
+           style="background-image: url('https://img.youtube.com/vi/USDhRcsUY90/maxresdefault.jpg');">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="desc">
+        <strong>Benson Boone</strong>
+        Beautiful Things
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div id="chappell" class="video-thumb" 
+           style="background-image: url('https://img.youtube.com/vi/i79Gly1ZM5w/maxresdefault.jpg');">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="desc">
+        <strong>Chappell Roan</strong>
+        Pink Pony Club
+      </div>
+    </div> 
+
+    <div class="gallery">
+      <div id="doechii" class="video-thumb" 
+           style="background-image: url('https://img.youtube.com/vi/XyoLUYKn5Kk/maxresdefault.jpg');">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="desc">
+        <strong>Doechii</strong>
+        Catfish / Denial is a River
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div id="billie" class="video-thumb" 
+           style="background-image: url('https://img.youtube.com/vi/yoNI5kHCZeU/maxresdefault.jpg');">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="desc">
+        <strong>Billie Eilish & FINNEAS</strong>
+        Birds Of A Feather
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div id="charlixcx" class="video-thumb" 
+           style="background-image: url('https://img.youtube.com/vi/35MjvGLdfoE/maxresdefault.jpg');">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="desc">
+        <strong>Charli XCX</strong>
+        Von Dutch / Guess
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div id="theweeknd" class="video-thumb" 
+           style="background-image: url('https://img.youtube.com/vi/8xhnIxD1KFU/maxresdefault.jpg');">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="desc">
+        <strong>The Weeknd & Playboy Carti</strong>
+        Cry For Me / Timeless
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div id="RAYE" class="video-thumb" 
+           style="background-image: url('https://img.youtube.com/vi/yTv8jX97HzE/maxresdefault.jpg');">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="desc">
+        <strong>RAYE</strong>
+        Oscar Winning Tears
+      </div>
     </div>
   </div>
 
-  <div class="gallery">
-  <div id="chappell" class="video-thumb" 
-       style="background-image: url('https://img.youtube.com/vi/i79Gly1ZM5w/maxresdefault.jpg');">
-    <div class="play-button">▶</div>
+  <!-- 2024 -->
+  <h2 class="year-title">Meilleures Performances – 2024</h2>
+  <div class="year-group">
+    <div class="gallery">
+      <div id="example2024" class="video-thumb" 
+           style="background-image: url('https://img.youtube.com/vi/exampleID/maxresdefault.jpg');">
+        <div class="play-button">▶</div>
+      </div>
+      <div class="desc">
+        <strong>Artist Name</strong>
+        Sample Song
+      </div>
+    </div>
+    <!-- Add more 2024 performances here -->
   </div>
-  <div class="desc">
-    <strong>Chappell Roan</strong>
-    Pink Pony Club
-  </div>
-</div> 
 
-  <div class="gallery">
-  <div id="doechii" class="video-thumb" 
-       style="background-image: url('https://img.youtube.com/vi/XyoLUYKn5Kk/maxresdefault.jpg');">
-    <div class="play-button">▶</div>
-  </div>
-  <div class="desc">
-    <strong>Doechii</strong>
-   Catfish / Denial is a River
-  </div>
-</div>
-
-  <div class="gallery">
-  <div id="billie" class="video-thumb" 
-       style="background-image: url('https://img.youtube.com/vi/yoNI5kHCZeU/maxresdefault.jpg');">
-    <div class="play-button">▶</div>
-  </div>
-  <div class="desc">
-    <strong>Billie Eilish & FINNEAS</strong>
-   Birds Of A Feather
-  </div>
-</div>
-
-  <div class="gallery">
-  <div id="charlixcx" class="video-thumb" 
-       style="background-image: url('https://img.youtube.com/vi/35MjvGLdfoE/maxresdefault.jpg');">
-    <div class="play-button">▶</div>
-  </div>
-  <div class="desc">
-    <strong>Charli XCX</strong>
-   Von Dutch / Guess
-  </div>
-</div>
-
-  <div class="gallery">
-  <div id="theweeknd" class="video-thumb" 
-       style="background-image: url('https://img.youtube.com/vi/8xhnIxD1KFU/maxresdefault.jpg');">
-    <div class="play-button">▶</div>
-  </div>
-  <div class="desc">
-    <strong>The Weeknd & Playboy Carti</strong>
-   Cry For Me / Timeless
-  </div>
-</div>
-
-  <div class="gallery">
-  <div id="RAYE" class="video-thumb" 
-       style="background-image: url('https://img.youtube.com/vi/yTv8jX97HzE/maxresdefault.jpg');">
-    <div class="play-button">▶</div>
-  </div>
-  <div class="desc">
-    <strong>RAYE</strong>
-   Oscar Winning Tears
-  </div>
 </div>
 
 <script>
-const videos = {
-  sabrina: 's-qrm3jwpl4',
-  benson: 'USDhRcsUY90',
-  chappell: 'i79Gly1ZM5w',
-  doechii: 'XyoLUYKn5Kk',
-  billie: 'yoNI5kHCZeU',
-  charlixcx: '35MjvGLdfoE',
-  theweeknd: '8xhnIxD1KFU',
-  RAYE: 'yTv8jX97HzE',
-  
-  
-  
-};
+  const videos = {
+    sabrina: 's-qrm3jwpl4',
+    benson: 'USDhRcsUY90',
+    chappell: 'i79Gly1ZM5w',
+    doechii: 'XyoLUYKn5Kk',
+    billie: 'yoNI5kHCZeU',
+    charlixcx: '35MjvGLdfoE',
+    theweeknd: '8xhnIxD1KFU',
+    RAYE: 'yTv8jX97HzE',
+    example2024: 'exampleID'
+  };
 
-Object.keys(videos).forEach(id => {
-  const div = document.getElementById(id);
-  div.addEventListener('click', function() {
-    const iframe = document.createElement('iframe');
-    iframe.width = '220';
-    iframe.height = '220';
-    iframe.src = `https://www.youtube.com/embed/${videos[id]}?autoplay=1`;
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-    iframe.allowFullscreen = true;
-    iframe.style.borderRadius = '16px';
-    this.parentNode.replaceChild(iframe, this);
+  Object.keys(videos).forEach(id => {
+    const div = document.getElementById(id);
+    if (div) {
+      div.addEventListener('click', function() {
+        const iframe = document.createElement('iframe');
+        iframe.width = '220';
+        iframe.height = '220';
+        iframe.src = `https://www.youtube.com/embed/${videos[id]}?autoplay=1`;
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.style.borderRadius = '16px';
+        this.parentNode.replaceChild(iframe, this);
+      });
+    }
   });
-});
 </script>
-
 </body>
 </html>
-
 
 
 

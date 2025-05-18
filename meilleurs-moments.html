@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Meilleurs Moments</title>
+    
     <style> 
      body {
          font-family:"merriweather, serif;
-         margin: 2en;
+         margin: 0;
          background-color: #b88606;
          color: #333;
-     }
+          }
+
+         header {
+      background-color: #b8860b;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      background-color: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section h2 {
+      color: #b8860b;
+    }
+
+    iframe, img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #b8860b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
     </style>
 
 </head>
@@ -26,40 +80,22 @@
         <section>
             <h2> Grammys 2024 </h2>
             <p> voici quelques moments marquants des grammys 2024 </p>
-           <iframe width="560" height="315" 
-  src="https://www.youtube.com/embed/AO6PocKRfKM" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen>
-</iframe>
-            <iframe width="560" height="315" 
-  src="https://www.youtube.com/embed/fEj9F9zsAxc" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen>
-</iframe>
-            <img src="https://assets.vogue.com/photos/65c03327bb8da269e04001a2/16:9/w_2580%2Cc_limit/1986349687" 
-     alt="Grammys 2024 red carpet" width="600">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/AO6PocKRfKM" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/fEj9F9zsAxc" allowfullscreen></iframe>
+      <img src="https://assets.vogue.com/photos/65c03327bb8da269e04001a2/16:9/w_2580%2Cc_limit/1986349687"
+           alt="Grammys 2024 red carpet">
         </section>
-    </main>
- <main>
-    <main>
-        <section>
+  
+         <section data-aos="fade-up">
             <h2>Grammys 2023</h2>
             <p> voici quelques moments marquants des grammys 2023 </p>
-            <iframe width="560" height="315" 
-  src="https://www.youtube.com/embed/5IOworcmngk" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen>
-</iframe>
-            <!-- Tu peux ajouter ici des images, vidéos, ou textes -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x4drP6Q6p30" allowfullscreen></iframe>
+   
         </section>
+        
     </main>
     <main>
+     
         <section>
             <h2> Grammys 2022 </h2>
             <p> voici quelques moments marquants des grammys 2022 </p>
@@ -76,3 +112,14 @@
    
     <footer>
         <p>&copy; 2025 Anais,Eugenia,Melissa</p>
+
+         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>

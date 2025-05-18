@@ -41,13 +41,14 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+<style>
 h1 {
-  <style>
-   font-family: Merriweather ;
-  font-size: 50px;
+  font-family: 'Merriweather', serif;
+  font-size: 70px;
   text-align: center;
-  </style>
+  color: white;
 }
+</style>
 
 h2 {
   text-align: left;

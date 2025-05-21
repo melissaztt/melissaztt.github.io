@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Laisser un avis</title>
+  <style>
+    body {
+      font-family: 'Merriweather', serif;
+      background-color: #fef3c7;
+      padding: 30px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #b8860b;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    textarea, input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .stars {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+
+    .stars input {
+      display: none;
+    }
+
+    .stars label {
+      font-size: 30px;
+      color: lightgray;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: gold;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #b8860b;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a87409;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Donne ton avis sur les Grammys !</h1>
+
+  <form>
+    <label for="nom">Ton nom (facultatif) :</label>
+    <input type="text" id="nom" name="nom">
+
+    <label>Ta note :</label>
+    <div class="stars">
+      <input type="radio" id="star5" name="note" value="5"><label for="star5">★</label>
+      <input type="radio" id="star4" name="note" value="4"><label for="star4">★</label>
+      <input type="radio" id="star3" name="note" value="3"><label for="star3">★</label>
+      <input type="radio" id="star2" name="note" value="2"><label for="star2">★</label>
+      <input type="radio" id="star1" name="note" value="1"><label for="star1">★</label>
+    </div>
+
+    <label for="avis">Ton avis :</label>
+    <textarea id="avis" name="avis" rows="5" placeholder="Écris ici ton avis..."></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+
+</body>
+</html>
